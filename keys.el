@@ -27,6 +27,9 @@
 (global-set-key [C-kp-subtract]  '(lambda nil (interactive) (my-zoom -1)))
 (message "All done!")
 
+(global-set-key (kbd "s-d") 'previous-buffer)
+(global-set-key (kbd "s-f") 'next-buffer)
+
 
 ;; ****************************** Edit
 
@@ -35,6 +38,17 @@
 
 ;; Cut
 (global-set-key (kbd "s-x") (kbd "C-w"))
+
+;; Expanding region
+(global-set-key (kbd "s-,") 'er/expand-region)
+(global-set-key (kbd "C-s-,") 'er/contract-region)
+
+
+
+;; ****************************** Search
+
+(global-set-key (kbd "C-c e") 'ack-in-directory)
+(global-set-key (kbd "s-a") 'asok/helm-mini)
 
 
 
@@ -50,8 +64,7 @@
 
 
 ;; ****************************** Unsets...
-(global-unset-key (kbd "s-t")) ;;  Now it's helm mini buffer @ init-helm.el
-
+;;(global-unset-key (kbd "s-t")) ;;  Now it's helm mini buffer @ init-helm.el
 
 
 (provide 'keys)

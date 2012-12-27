@@ -55,7 +55,7 @@
 						       :type git
 						       :url "git://gitorious.org/evil/evil.git"
 						       :features evil
-						       :depends undo-tree)
+						       :depends undo-tree)				
 			)			
 )
 
@@ -63,7 +63,7 @@
 								evil-rails
 								smex
 								helm
-								projectile								
+								projectile
 								ace-jump-mode
 		 						ido-ubiquitous
 								inf-ruby
@@ -81,10 +81,14 @@
 								quickrun
 								yaml-mode
 								haml-mode
+								coffee-mode
+								json
 								mmm-mode
 								window-numbering
 								auto-complete
+								auto-complete-ruby
+								auto-complete-css
 								)
 	(mapcar 'el-get-source-name el-get-sources) '())
 
-(provide 'packages)
+	(provide 'packages)

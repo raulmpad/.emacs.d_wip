@@ -8,3 +8,11 @@
 		  (regexp-opt keywords t)
 		  ruby-keyword-end-re)
 	  (list 2 font-lock-keyword-face)))))
+		
+(defun dired-rspec-verify ()
+	(interactive)
+	(rspec-run-single-file (dired-current-directory) (rspec-core-options)))
+
+(defun dired-rspec-verify ()
+	(interactive)
+	(rspec-run-single-file (dired-current-directory) (rspec-core-options)))

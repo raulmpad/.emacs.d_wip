@@ -14,5 +14,7 @@
     (define-key map (kbd "s-9") 'select-window-9)
     map)
   "Keymap used in by `window-numbering-mode'.")
-	
+
+(provide 'init-window-numering)
+
 (window-numbering-mode 1)

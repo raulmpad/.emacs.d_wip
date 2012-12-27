@@ -6,10 +6,10 @@
 (add-to-list 'auto-mode-alist '("\\.text\.erb$" . rhtml-mode))
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'interpreter-mode-alist '("ruby" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Rakefile$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rb$" .    ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile$" .  ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rake$" .  ruby-mode))
 
 (setq enh-ruby-program "~/.rvm/rubies/ruby-1.9.3-p125/bin/ruby")
 
