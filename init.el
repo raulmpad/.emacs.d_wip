@@ -89,7 +89,9 @@
 ;; ****************************** Own last requirements
 (setq own-lisp-dir
 	(expand-file-name "raulmpad" user-emacs-directory))
-(add-to-list 'load-path own-lisp-dir)
+(dolist (file (directory-files own-lisp-dir t "\\w+"))
+  (when (file-regular-p file)
+    (load file)))
 
 (require 'helm-rails)
 

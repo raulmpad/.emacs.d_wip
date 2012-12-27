@@ -40,8 +40,8 @@
 (global-set-key (kbd "s-x") (kbd "C-w"))
 
 ;; Expanding region
-(global-set-key (kbd "s-,") 'er/expand-region)
-(global-set-key (kbd "C-s-,") 'er/contract-region)
+(global-set-key (kbd "s-,") 'expand-region)
+(global-set-key (kbd "C-s-,") 'contract-region)
 
 
 
@@ -61,6 +61,7 @@
 (global-set-key (kbd "s-j") 'ace-jump-mode)
 
 ;; auto-complete
+
 
 
 ;; ****************************** Unsets...
