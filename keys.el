@@ -18,9 +18,9 @@
 
 ;; Zooming
 (defun my-zoom (n)
-"Increase or decrease font size based upon argument"
-(set-face-attribute 'default (selected-frame) :height
-(+ (face-attribute 'default :height) (* (if (> n 0) 1 -1) 10))))
+	"Increase or decrease font size based upon argument"
+	(set-face-attribute 'default (selected-frame) :height
+	(+ (face-attribute 'default :height) (* (if (> n 0) 1 -1) 10))))
 (global-set-key (kbd "C-+")      '(lambda nil (interactive) (my-zoom 1)))
 (global-set-key [C-kp-add]       '(lambda nil (interactive) (my-zoom 1)))
 (global-set-key (kbd "C-_")      '(lambda nil (interactive) (my-zoom -1)))
@@ -46,6 +46,7 @@
 ;; jump !!
 (global-set-key (kbd "s-j") 'ace-jump-mode)
 
+;; auto-complete
 
 
 ;; ****************************** Unsets...

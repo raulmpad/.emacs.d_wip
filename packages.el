@@ -49,10 +49,19 @@
 				(:name thingatpt+
 		    		:type emacswiki
 		        :load "thingatpt+.el")
+				(:name evil
+						:website "http://gitorious.org/evil/pages/Home"
+						:description "Evil is an extensible vi layer for Emacs. It emulates the main features of Vim, and provides facilities for writing custom extensions."
+						       :type git
+						       :url "git://gitorious.org/evil/evil.git"
+						       :features evil
+						       :depends undo-tree)
 			)			
 )
 
-(el-get 'sync '(smex
+(el-get 'sync '(evil-surround
+								evil-rails
+								smex
 								helm
 								projectile								
 								ace-jump-mode
@@ -73,7 +82,8 @@
 								yaml-mode
 								haml-mode
 								mmm-mode
-								window-numbering 
+								window-numbering
+								auto-complete
 								)
 	(mapcar 'el-get-source-name el-get-sources) '())
 
