@@ -4,6 +4,9 @@
 (ido-mode 1)
 
 (require 'ido-ubiquitous)
-(ido-ubiquitous-mode)
+(ido-ubiquitous-mode 1)
 
-(provide 'inits/ido)
+;; ****************************** Helps ido with recent called methods
+(require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)

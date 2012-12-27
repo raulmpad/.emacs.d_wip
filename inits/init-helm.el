@@ -1,7 +1,5 @@
 (require 'helm-mode)
 
-(global-set-key (kbd "s-t") 'asok/helm-mini)
-
 (defvar helm-c-source-asok-config-files
   '((name . "My config files")
     (type . file)

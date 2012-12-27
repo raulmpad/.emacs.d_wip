@@ -74,7 +74,10 @@
     (aset buffer-display-table ?\^M [])
                                           ;(aset buffer-display-table ?\^[ []))
     )
-		
-		
+
+(defun dired-rspec-verify-single ()
+	(interactive)
+	(rspec-compile (mapconcat 'identity (dired-get-marked-files) " ") (rspec-core-options)))
+
 		
 (provide 'file-defuns)
