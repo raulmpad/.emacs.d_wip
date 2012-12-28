@@ -15,6 +15,9 @@
 ;; create new scratch buffer
 (global-set-key (kbd "C-c n") 'create-scratch-buffer)
 
+;; current buffer name
+(global-set-key (kbd "C-n") 'current-buffer-name)
+
 ;; Zooming
 (defun my-zoom (n)
 	"Increase or decrease font size based upon argument"

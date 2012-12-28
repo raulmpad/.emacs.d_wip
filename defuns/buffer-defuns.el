@@ -66,3 +66,9 @@
              (set-window-start w1 s2)
              (set-window-start w2 s1)
              (setq i (1+ i)))))))
+
+
+(defun current-buffer-name ()
+  "Retrieve current buffer name"
+  (interactive)
+  (concat default-directory (buffer-name)))
