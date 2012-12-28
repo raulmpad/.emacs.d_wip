@@ -5,8 +5,6 @@
 (define-key global-map (kbd "s-r") 'helm-rails-all)
 
 
-
-
 ;; ****************************** Full screen magit-status
 
 (defadvice magit-status (around magit-fullscreen activate)
@@ -34,3 +32,10 @@
                  "http://www.urbandictionary.com/define.php?term="
                  ""])))
 (global-set-key (kbd "C-x g") 'webjump)
+
+
+
+;; ****************************** Moving to splitted new window
+(defadvice split-window (after move-point-to-new-window activate)
+  "Moves the point to the newly created window after splitting."
+  (other-window 1))

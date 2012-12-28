@@ -9,6 +9,9 @@
 (evil-define-key 'normal global-map (kbd ", g")			 'magit-status)
 (evil-define-key 'motion ruby-mode-map (kbd "*")		 'asok/evil-search-ruby-word-forward)
 (evil-define-key 'normal global-map (kbd ", i") (kbd "C-x h ="))
+(evil-define-key 'normal global-map (kbd ", k") 'move-up-line)
+(evil-define-key 'normal global-map (kbd ", j") 'move-down-line)
+(evil-define-key 'normal global-map (kbd ", d") 'duplicate-line)
 
 ;; Removes all evil setting when we're in "Insert Mode"
 (setcdr evil-insert-state-map nil)
