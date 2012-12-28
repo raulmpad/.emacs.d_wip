@@ -10,4 +10,12 @@
 (evil-define-key 'motion ruby-mode-map (kbd "*")		 'asok/evil-search-ruby-word-forward)
 (evil-define-key 'normal global-map (kbd ", i") (kbd "C-x h ="))
 
+;; Removes all evil setting when we're in "Insert Mode"
+(setcdr evil-insert-state-map nil)
+(define-key evil-insert-state-map
+  (read-kbd-macro evil-toggle-key) 'evil-emacs-state)
+;; But we also need to be able to return to "Normal Mode" and delete properly
+(define-key evil-insert-state-map [escape] 'evil-normal-state)
+(define-key evil-insert-state-map (kbd "C-d") 'backward-delete-char-untabify)
+
 (evil-mode 1)
