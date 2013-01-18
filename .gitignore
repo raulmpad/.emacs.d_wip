@@ -17,3 +17,4 @@ ac-comphist.dat
 abbrev_defs
 *.elc
 *.el~
+/projectile.cache
