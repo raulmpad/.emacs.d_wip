@@ -54,6 +54,13 @@
 	(:name thingatpt+
 	       :type emacswiki
 	       :load "thingatpt+.el")
+	
+	(:name Enhanced-Ruby-Mode
+		:description "Replacement for ruby-mode which uses ruby 1.9's Ripper to parse and indent"
+		:type github
+		:pkgname "jacott/Enhanced-Ruby-Mode"
+		:features ruby-mode
+		:post-init (progn (load-library "ruby-mode")))
 
 	(:name evil
 	       :website "http://gitorious.org/evil/pages/Home"
@@ -77,7 +84,6 @@
 		flymake-css
 		flymake-haml
 		flymake-sass
-		Enhanced-Ruby-Mode
 		flymake-ruby
 		ruby-end
 		ruby-block
@@ -94,8 +100,7 @@
 		auto-complete
 		auto-complete-ruby
 		auto-complete-css
-		yasnippet
-		)
+		yasnippet)
 	(mapcar 'el-get-source-name el-get-sources) '())
 
 (provide 'packages)

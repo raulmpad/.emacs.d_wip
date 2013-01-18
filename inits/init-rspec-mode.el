@@ -25,3 +25,10 @@
 (defun dired-rspec-verify ()
   (interactive)
   (rspec-run-single-file (dired-current-directory) (rspec-core-options)))
+
+;; Check this on el-get rspec-mode.el to enable debugging on buffer
+;; Method: (defun rspec-compile (a-file-or-dir &optional opts)...
+;; Move this line
+;; (compile (mapconcat 'identity `(,(rspec-runner) ,a-file-or-dir ,(rspec-runner-options opts)) " ")))
+;; to
+;; (compile (mapconcat 'identity `(,(rspec-runner) ,a-file-or-dir ,(rspec-runner-options opts)) " ") t))

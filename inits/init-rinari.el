@@ -52,8 +52,7 @@
 (add-to-list 'rinari-model-keywords "alias_attribute")
 (add-to-list 'rinari-model-keywords "workflow")
 
-(add-hook 'rinari-minor-mode-hook '(lambda () (asok/ruby-mode-add-keywords '("with_options"
-                                                                             "delegate") nil)))
+;; (add-hook 'rinari-minor-mode-hook '(lambda () (asok/ruby-mode-add-keywords '("with_options" "delegate") nil)))
 
 (defun asok/rinari-find-file (path)
   (find-file (concat (rinari-root) path)))
