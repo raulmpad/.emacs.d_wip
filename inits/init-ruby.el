@@ -17,35 +17,6 @@
 
 (require 'ruby-block)
 
-(defun asok/ruby-mode-add-keywords (keywords mode)
-  (font-lock-add-keywords
-   mode
-   (list (list
-	  (concat "\\(^\\|[^_:.@$]\\|\\.\\.\\)\\b"
-		  (regexp-opt keywords t)
-		  ruby-keyword-end-re)
-	  (list 2 font-lock-keyword-face)))))
-
-(asok/enh-ruby-mode-add-keywords '("include"
-                                   "extend"
-                                   "require"
-                                   "require_relative"
-                                   "attr_accessor"
-                                   "attr_writer"
-                                   "atrr_reader"
-                                   "debugger"
-                                   "gem")
-                                 'enh-ruby-mode)
-
-(add-to-list
-	'hs-special-modes-alist
-	'(enh-ruby-mode
-		"class\\|module\\|def\\|if\\|unless\\|case\\|while\\|until\\|for\\|begin\\|do"
-		"end"
-		"#"
-		enh-ruby-end-of-block
-		nil))
-
 (evil-define-key 'normal ruby-mode-map (kbd "<return>") 'asok/find-tag-dwim)
 
 (defun asok/bounds-of-ruby-word-at-point ()
@@ -72,12 +43,3 @@
 	(dotimes (var (or count 1))
 		(setq isearch-forward t)
 			(evil-search (thing-at-point 'ruby-word) t evil-regexp-search)))
-
-(add-to-list
-	'hs-special-modes-alist
-	'(ruby-mode
-      "class\\|module\\|def\\|if\\|unless\\|case\\|while\\|until\\|for\\|begin\\|do"
-		       "end"
-		       "#"
-		       ruby-end-of-block
-		       nil))

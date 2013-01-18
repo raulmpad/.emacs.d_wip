@@ -51,6 +51,7 @@
 
 (global-set-key (kbd "C-c e") 'ack-in-directory)
 (global-set-key (kbd "s-a") 'asok/helm-mini)
+(global-set-key (kbd "s-i") 'helm-imenu)
 
 
 
