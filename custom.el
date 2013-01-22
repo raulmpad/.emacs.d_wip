@@ -5,7 +5,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(Buffer-menu-buffer+size-width 80)
  '(custom-safe-themes (quote ("eacf43271f6e4bf00654862e6071f87b8484f74066d5c9712fb217b32ba5677a" default)))
+ '(helm-buffer-max-length 60)
+ '(helm-full-frame nil)
  '(rspec-use-bundler-when-possible nil)
  '(rspec-use-rake-flag nil)
  '(rspec-use-rvm t))
