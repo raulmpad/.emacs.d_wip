@@ -31,4 +31,5 @@
 ;; Move this line
 ;; (compile (mapconcat 'identity `(,(rspec-runner) ,a-file-or-dir ,(rspec-runner-options opts)) " ")))
 ;; to
-;; (compile (mapconcat 'identity `(,(rspec-runner) ,a-file-or-dir ,(rspec-runner-options opts)) " ") t))
+;; (compile (mapconcat 'identity `(,(rspec-runner) ,(rspec-runner-options opts) ,a-file-or-dir) " ") t))
+;; This also solves the problem with recent zeus versions whose conflicts with rspec-mode params enumeration.
