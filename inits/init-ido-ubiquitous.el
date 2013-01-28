@@ -3,8 +3,8 @@
 (setq ido-everywhere t)
 (ido-mode 1)
 
-(require 'ido-ubiquitous)
-(ido-ubiquitous-mode 1)
+;; (require 'ido-ubiquitous)
+;; (ido-ubiquitous-mode 1)
 
 ;; ****************************** Helps ido with recent called methods
 (require 'smex)
