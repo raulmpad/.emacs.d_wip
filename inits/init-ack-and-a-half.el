@@ -17,6 +17,7 @@
 					  "--type=yaml"
 					  "--type=xml"
 					  "--type-add html=.haml"
+					  "--type-add js=.coffee"
 					  "--type-add css=.sass,.scss"
 					  "--ignore-dir=tmp"
 					  "--ignore-dir=coverage"))))
@@ -47,6 +48,7 @@
 					  "--type=css"
 					  "--type=yaml"
 					  "--type-add html=.haml"
+					  "--type-add js=.coffee"
 					  "--type-add css=.sass,.scss"
 					  "--ignore-dir=tmp"
 					  "--ignore-dir=coverage"))))
