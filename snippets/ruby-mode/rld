@@ -1,0 +1,4 @@
+# name: Rails logger
+# key: rld
+# --
+Rails.logger.debug "$0"

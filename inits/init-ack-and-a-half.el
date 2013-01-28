@@ -18,6 +18,7 @@
 			"--type=xml"
 			"--type-add html=.haml"
 			"--type-add css=.sass,.scss"
+			"--type-add js=.coffee"
 			"--ignore-dir=tmp"
 			"--ignore-dir=coverage"))))
   (ack-and-a-half-run (read-directory-name "directory to look in") regexp pattern)))
@@ -48,6 +49,7 @@
 			"--type=yaml"
 			"--type-add html=.haml"
 			"--type-add css=.sass,.scss"
+			"--type-add js=.coffee"
 			"--ignore-dir=tmp"
 			"--ignore-dir=coverage"))))
 	(ack-and-a-half-run (mrm/root) regexp pattern)))

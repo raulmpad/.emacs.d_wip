@@ -24,5 +24,4 @@
 ;; coffee mode hooks
 (add-hook 'coffee-mode-hook 'flymake-coffee-load)
 
-
 (provide 'hooks)

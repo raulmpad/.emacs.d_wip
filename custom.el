@@ -10,6 +10,7 @@
  '(helm-buffer-max-length 60)
  '(helm-full-frame nil)
  '(rspec-use-bundler-when-possible nil)
+ '(rspec-use-opts-file-when-available t)
  '(rspec-use-rake-flag nil)
  '(rspec-use-rvm t))
  
