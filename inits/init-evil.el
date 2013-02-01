@@ -11,6 +11,7 @@
 (evil-define-key 'normal global-map (kbd ", k") 'move-up-line)
 (evil-define-key 'normal global-map (kbd ", j") 'move-down-line)
 (evil-define-key 'normal global-map (kbd ", n") 'current-buffer-name)
+(evil-define-key 'normal global-map (kbd ", ,") 'er/expand-region)
 (evil-define-key 'normal enh-ruby-mode-map (kbd "<return>")	 'asok/find-tag-dwim)
 (evil-define-key 'normal enh-ruby-mode-map (kbd ", z")		 'hs-toggle-hiding)
 (evil-define-key 'normal enh-ruby-mode-map (kbd "<return>")	 'asok/find-tag-dwim)

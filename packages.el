@@ -100,6 +100,7 @@
 		auto-complete
 		auto-complete-ruby
 		auto-complete-css
+		expand-region
 		yasnippet)
 	(mapcar 'el-get-source-name el-get-sources) '())
 
