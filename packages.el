@@ -69,6 +69,12 @@
 	       :url "git://gitorious.org/evil/evil.git"
 	       :features evil
 	       :depends undo-tree)
+	(:name milkypostman-powerline
+	       :type github
+	       :pkgname "milkypostman/powerline"
+	       :prepare (progn
+			  (require 'powerline)
+			  (powerline-default)))
 	)
       )
 
@@ -81,10 +87,12 @@
 		ido-ubiquitous
 		inf-ruby
 		flymake
+		flymake-cursor
 		flymake-css
 		flymake-haml
 		flymake-sass
 		flymake-ruby
+		js-comint
 		ruby-end
 		ruby-block
 		rspec-mode
@@ -101,7 +109,10 @@
 		auto-complete-ruby
 		auto-complete-css
 		expand-region
-		yasnippet)
+		yasnippet
+		wrap-region
+		twilight-anti-bright-theme
+		twilight-bright-theme)
 	(mapcar 'el-get-source-name el-get-sources) '())
 
 (provide 'packages)
