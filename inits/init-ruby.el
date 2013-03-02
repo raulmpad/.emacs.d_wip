@@ -11,9 +11,10 @@
 (add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rake$" .  ruby-mode))
 
-;; (setq enh-ruby-program "~/.rvm/rubies/ruby-1.9.3-p125/bin/ruby")
+;; (setq enh-ruby-program "/usr/local/rvm/rubies/ruby-1.9.3-p194/bin/ruby")
 
 (require 'rvm)
+(rvm-use-default)
 
 (require 'ruby-block)
 

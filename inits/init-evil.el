@@ -6,7 +6,7 @@
 (evil-define-key 'normal global-map (kbd ", i") (kbd "C-x h ="))
 (evil-define-key 'normal global-map (kbd ", o") 'helm-occur)
 (evil-define-key 'normal global-map (kbd ", m")	'asok/find-tag-dwim)
-(evil-define-key 'normal global-map (kbd ", i") (kbd "C-x h ="))
+(evil-define-key 'normal global-map (kbd ", a") (kbd "C-x h"))
 (evil-define-key 'normal global-map (kbd ", d") 'duplicate-line)
 (evil-define-key 'normal global-map (kbd ", k") 'move-up-line)
 (evil-define-key 'normal global-map (kbd ", j") 'move-down-line)
