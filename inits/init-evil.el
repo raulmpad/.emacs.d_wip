@@ -5,15 +5,18 @@
 (evil-define-key 'normal global-map (kbd ", s") 'mrm/ack-project)
 (evil-define-key 'normal global-map (kbd ", i") (kbd "C-x h ="))
 (evil-define-key 'normal global-map (kbd ", o") 'helm-occur)
+<<<<<<< HEAD
 (evil-define-key 'normal global-map (kbd ", m")	'asok/find-tag-dwim)
+=======
+>>>>>>> 9817730554595cb77dec308f48979bfb48abd89a
 (evil-define-key 'normal global-map (kbd ", a") (kbd "C-x h"))
 (evil-define-key 'normal global-map (kbd ", d") 'duplicate-line)
 (evil-define-key 'normal global-map (kbd ", k") 'move-up-line)
 (evil-define-key 'normal global-map (kbd ", j") 'move-down-line)
 (evil-define-key 'normal global-map (kbd ", n") 'current-buffer-name)
+(evil-define-key 'normal global-map (kbd ", ,") 'er/expand-region)
 (evil-define-key 'normal enh-ruby-mode-map (kbd "<return>")	 'asok/find-tag-dwim)
 (evil-define-key 'normal enh-ruby-mode-map (kbd ", z")		 'hs-toggle-hiding)
-(evil-define-key 'normal enh-ruby-mode-map (kbd "<return>")	 'asok/find-tag-dwim)
 (evil-define-key 'normal dired-mode-map (kbd ", k")		 'dired-up-directory)
 (evil-define-key 'normal dired-mode-map (kbd ", v")		 'dired-rspec-verify)
 (evil-define-key 'normal global-map (kbd ", g")			 'magit-status)

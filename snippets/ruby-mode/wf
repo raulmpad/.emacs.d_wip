@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: workflow
+# key: wf
+# --
+include Workflow
+workflow do
+  state :${1:state} do
+    event :${2:event}, :transitions_to => :${3:transition}
+  end
+end 
