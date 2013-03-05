@@ -10,6 +10,8 @@
 (add-hook 'enh-ruby-mode-hook 'auto-complete-mode)
 (add-hook 'enh-ruby-mode-hook 'ruby-end-mode)
 
+(wrap-region-global-mode t)
+
 (require 'ruby-defuns)
 (add-hook 'enh-ruby-mode-hook 'raulmpad/ruby-general-keywords)
 (add-hook 'ruby-mode-hook 'raulmpad/ruby-apply-keywords)
