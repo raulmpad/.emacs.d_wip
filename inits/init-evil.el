@@ -5,10 +5,6 @@
 (evil-define-key 'normal global-map (kbd ", s") 'mrm/ack-project)
 (evil-define-key 'normal global-map (kbd ", i") (kbd "C-x h ="))
 (evil-define-key 'normal global-map (kbd ", o") 'helm-occur)
-<<<<<<< HEAD
-(evil-define-key 'normal global-map (kbd ", m")	'asok/find-tag-dwim)
-=======
->>>>>>> 9817730554595cb77dec308f48979bfb48abd89a
 (evil-define-key 'normal global-map (kbd ", a") (kbd "C-x h"))
 (evil-define-key 'normal global-map (kbd ", d") 'duplicate-line)
 (evil-define-key 'normal global-map (kbd ", k") 'move-up-line)
