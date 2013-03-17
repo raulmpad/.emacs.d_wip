@@ -12,7 +12,8 @@
  '(rspec-use-bundler-when-possible nil)
  '(rspec-use-opts-file-when-available t)
  '(rspec-use-rake-flag nil)
- '(rspec-use-rvm t))
+ '(rspec-use-rvm t)
+ '(tab-width 2))
  
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
