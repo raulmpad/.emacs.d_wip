@@ -10,5 +10,5 @@
 
 (add-to-list 'auto-mode-alist '("\\.html\\.erb$" . html-erb-mode))
 
-(setq mmm-submode-decoration-level 0
-       mmm-parse-when-idle t)
+;; (setq mmm-submode-decoration-level 0
+;;        mmm-parse-when-idle t)

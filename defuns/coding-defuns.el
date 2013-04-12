@@ -35,6 +35,13 @@
   (interactive "r")
   (align-regexp beg end ":\\(\\s-*\\)" 1 1 t))
 
+(defun indent-indent ()
+    "Indent the whole buffer"
+    (interactive)
+    (save-excursion
+        (delete-trailing-whitespace)
+        (indent-region (point-min) (point-max) nil)
+        (untabify (point-min) (point-max))))
 
 ;; ****************************** Moving lines arround
 (defun duplicate-line ()
