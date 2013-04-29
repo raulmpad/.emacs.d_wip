@@ -12,12 +12,21 @@
 (evil-define-key 'normal global-map (kbd ", j") 'move-down-line)
 (evil-define-key 'normal global-map (kbd ", n") 'current-buffer-name)
 (evil-define-key 'normal global-map (kbd ", ,") 'er/expand-region)
+(evil-define-key 'normal global-map (kbd "C-f v") 'rinari-find-view)
+(evil-define-key 'normal global-map (kbd "C-f e") 'rinari-find-environment)
+(evil-define-key 'normal global-map (kbd "C-f c") 'rinari-find-controller)
+(evil-define-key 'normal global-map (kbd "C-f l") 'rinari-find-log)
+(evil-define-key 'normal global-map (kbd "C-f m") 'rinari-find-model)
+(evil-define-key 'normal global-map (kbd "C-f f") 'ag-project)
+(evil-define-key 'normal global-map (kbd "C-f g") 'ag-regexp-project-at-point)
 (evil-define-key 'normal enh-ruby-mode-map (kbd "<return>")	 'asok/find-tag-dwim)
 (evil-define-key 'normal enh-ruby-mode-map (kbd ", z")		 'hs-toggle-hiding)
 (evil-define-key 'normal dired-mode-map (kbd ", k")		 'dired-up-directory)
 (evil-define-key 'normal dired-mode-map (kbd ", v")		 'dired-rspec-verify)
 (evil-define-key 'normal global-map (kbd ", g")			 'magit-status)
 (evil-define-key 'motion ruby-mode-map (kbd "*")		 'asok/evil-search-ruby-word-forward)
+
+
 
 ;; Removes all evil setting when we're in "Insert Mode"
 (setcdr evil-insert-state-map nil)

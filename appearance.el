@@ -34,7 +34,8 @@
 
 ;; ****************************** My prefered theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'misterioso t nil)
+;; (load-theme 'misterioso t nil)
+(load-theme 'railscasts t nil)
 
 
 
