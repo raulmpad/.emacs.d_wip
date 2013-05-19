@@ -114,6 +114,9 @@
 								wrap-region
 								;;nxhtml
 								egg
+								clojure-mode
+								nrepl
+								ac-nrepl
 								twilight-anti-bright-theme
 								twilight-bright-theme)
 								(mapcar 'el-get-source-name el-get-sources) '())
