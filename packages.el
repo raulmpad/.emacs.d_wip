@@ -12,70 +12,71 @@
 
 (setq el-get-sources
       '(
-				(:name ack-and-a-half
-							 :type github
-							 :pkgname "jhelwig/ack-and-a-half")
+        (:name ack-and-a-half
+               :type github
+               :pkgname "jhelwig/ack-and-a-half")
 
-				(:name magit
-							 :website "https://github.com/magit/magit#readme"
-							 :description "It's Magit! An Emacs mode for Git."
-							 :type github
-							 :pkgname "magit/magit"
-							 :info "."
-							 ;; let el-get care about autoloads so that it works with all OSes
-							 :build `(("make",(format "EMACS=%s" el-get-emacs) "all"))
-							 :build/berkeley-unix (("touch" "`find . -name Makefile`") ("gmake")))
+        (:name magit
+               :website "https://github.com/magit/magit#readme"
+               :description "It's Magit! An Emacs mode for Git."
+               :type github
+               :pkgname "magit/magit"
+               :info "."
+               ;; let el-get care about autoloads so that it works with all OSes
+               :build `(("make",(format "EMACS=%s" el-get-emacs) "all"))
+               :build/berkeley-unix (("touch" "`find . -name Makefile`") ("gmake")))
 
-				(:name wgrep
-							 :type github
-							 :pkgname "mhayashi1120/Emacs-wgrep"
-							 :branch "BR-ack-support")
+        (:name wgrep
+               :type github
+               :pkgname "mhayashi1120/Emacs-wgrep"
+               :branch "BR-ack-support")
 
-				(:name helm-git
-							 :type github
-							 :pkgname "maio/helm-git"
-							 :features (helm-git))
+        (:name helm-git
+               :type github
+               :pkgname "maio/helm-git"
+               :features (helm-git))
 
-				(:name flymake-easy
-							 :type elpa)
+        (:name flymake-easy
+               :type elpa)
 
-				(:name flymake-coffee
-							 :type github
-							 :pkgname "purcell/flymake-coffee")
+        (:name flymake-coffee
+               :type github
+               :pkgname "purcell/flymake-coffee")
 
-				(:name readline-complete
-							 :type github
-							 :pkgname "monsanto/readline-complete.el")
+        (:name readline-complete
+               :type github
+               :pkgname "monsanto/readline-complete.el")
 
-				(:name ruby-dev
-							 :type git
-							 :url "git://github.com/Mon-Ouie/ruby-dev.el.git")
+        (:name ruby-dev
+               :type git
+               :url "git://github.com/Mon-Ouie/ruby-dev.el.git")
 
-				(:name thingatpt+
-							 :type emacswiki
-							 :load "thingatpt+.el")
+        (:name thingatpt+
+               :type emacswiki
+               :load "thingatpt+.el")
 
-				(:name Enhanced-Ruby-Mode
-							 :description "Replacement for ruby-mode which uses ruby 1.9's Ripper to parse and indent"
-							 :type github
-							 :pkgname "jacott/Enhanced-Ruby-Mode"
-							 :features ruby-mode
-							 :post-init (progn (load-library "ruby-mode")))
+        (:name Enhanced-Ruby-Mode
+               :description "Replacement for ruby-mode which uses ruby 1.9's Ripper to parse and indent"
+               :type github
+               :pkgname "jacott/Enhanced-Ruby-Mode"
+               :features ruby-mode
+               :post-init (progn (load-library "ruby-mode")))
 
-				(:name evil
-							 :website "http://gitorious.org/evil/pages/Home"
-							 :description "Evil is an extensible vi layer for Emacs. It emulates the main features of Vim, and provides facilities for writing custom extensions."
-							 :type git
-							 :url "git://gitorious.org/evil/evil.git"
-							 :features evil
-							 :depends undo-tree)
-				(:name milkypostman-powerline
-							 :type github
-							 :pkgname "milkypostman/powerline"
-							 :prepare (progn
-													(require 'powerline)
-													(powerline-default)))
-				)
+        (:name evil
+               :website "http://gitorious.org/evil/pages/Home"
+               :description "Evil is an extensible vi layer for Emacs. It emulates the main features of Vim, and provides facilities for writing custom extensions."
+               :type git
+               :url "git://gitorious.org/evil/evil.git"
+               :features evil
+               :depends undo-tree)
+
+        (:name milkypostman-powerline
+               :type github
+               :pkgname "milkypostman/powerline"
+               :prepare (progn
+                          (require 'powerline)
+                          (powerline-default)))
+        )
       )
 
 (el-get 'sync '(evil-surround

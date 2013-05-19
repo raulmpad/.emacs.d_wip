@@ -30,3 +30,6 @@
                      (lambda (output)
                        (replace-regexp-in-string ".*1G\.\.\..*5G" "..."
 						 (replace-regexp-in-string ".*1G.*3G" "&gt;" output))))))
+
+;; Tab indentation
+(setq js-indent-level 2)
